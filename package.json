@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/los4673/friendFinder#readme",
   "dependencies": {
-    "http": "0.0.0"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
   }
 }
