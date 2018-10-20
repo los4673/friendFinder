@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Friend Finder App/Survey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+
+</head>
+
+<body class="cyan darken-2">
+    <nav>
+        <div class="nav-wrapper blue-grey">
+            <a href="#" class="brand-logo">Friend Finder (Survey Page)</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="/">Home</a></li>
+                <li><a href="/survey">Survey</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Take the quiz!</span>
+                        <p>
+                            Answere these questions and we will match you with a new friend!
+                        </p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="card-content white-text question">
+                        <p>
+                            Question 1: Do you prefer talking over the phone or face to face?
+                        </p>
+                        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'><script id="question1"></script>Drop Me!</a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!" value=1>one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a href="#!">three</a></li>
+                            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                        </ul>
+
+
+                    </div>
+
+                    <div class="divider"></div>
+                    <div class="card-content white-text question">
+                        <p>
+                            Question 3:
+                        </p>
+                        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'><script id="question1"></script>Drop Me!</a>
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a href="#!" value="1">one</a></li>
+                            <li><a href="#!">two</a></li>
+                            <li class="divider" tabindex="-1"></li>
+                            <li><a href="#!">three</a></li>
+                            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+                            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <a class="waves-effect waves-light btn" id="survey">Submit</a>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- <script src="home.js" async defer></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="../public/js/survey.js"></script>
+
+
+</body>
+
+</html>

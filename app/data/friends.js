@@ -18,6 +18,22 @@ var possibleFriends = [
           9,
           10
       ]
+    },
+    {
+      name: "Guac",
+      photo: "String",
+      scores: [
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2,
+          1
+      ]
     }
   ];
 

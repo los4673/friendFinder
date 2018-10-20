@@ -6,7 +6,7 @@ var path = require('path');
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 8080;
 
 // app.use(express.static(path.join(__dirname, 'public')));
 
@@ -14,9 +14,15 @@ var PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Configers app to serve static assets from 'public' folder relative to where you script it
-app.use(express.static('app/public'));
-app.use(express.static('app/public/js'));
-app.use(express.static('app/public/css'));
+app.use(express.static('app'));
+
+// app.use(express.static('app/public'));
+// app.use(express.static('app/public/js'));
+// app.use(express.static('app/public/css'));
+// app.use(express.static('app/data'));
+// app.use(express.static('app/data/friends.js'));
+
+
 
 // Basic route that sends the user first to the AJAX Page
 
