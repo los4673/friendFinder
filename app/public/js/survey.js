@@ -68,7 +68,9 @@ $("#survey").click(function(e) {
     // Variable that will keep track of the current best match
     var currentBestScore = 0;
     // Loops through users retrieved from "database"
+    console.log("current possible friends" + JSON.stringify(possibleFriends));
     for (var i = 0; i < possibleFriends.length; i++) {
+      console.log("iteration: " + i + JSON.stringify(possibleFriends))
         console.log("_______________________________________________________")
 
     //Stores current friend and their scores
@@ -98,10 +100,30 @@ $("#survey").click(function(e) {
     }
 
     console.log("current best match");
-    console.log(bestMatch)
-  });
-  $.post("/api/friends", newFriend, function (data) {
-      console.log("New friend sent to database!")
+    console.log("best match is" + JSON.stringify(bestMatch))
+    findBestMatch(possibleFriends);
+  }).done(function() {
+    $.post("/api/friends", newFriend, function (data) {
+      console.log("New friend sent to database!");
+      alert("best match" + JSON.stringify(bestMatch));
 
   });
+  });
+
+  //Sends new friend to "database"
+  // $.post("/api/friends", newFriend, function (data) {
+  //     console.log("New friend sent to database!")
+
+  // });
 });
+
+//Gets 
+function findBestMatch(possibleFriends) {
+  for(var i = 0; i < possibleFriends.length; i++) {
+    console.log("findBestMatch loop" + possibleFriends[i])
+  }
+
+console.log("hello")
+  
+
+}
