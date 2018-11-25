@@ -1,12 +1,6 @@
 console.log("Survey JS file connected!!");
 
 $(".dropdown-trigger").dropdown();
-// $("#dropdown1").click(function(){
-//     var instance = M.Dropdown.getInstance();
-//     console.log(instance)
-//     console.log("Clicked")
-// })
-
 // Survey Button is Clicked
 $("#survey").click(function(e) {
   //Prevent the button from reloading the page
@@ -109,12 +103,6 @@ $("#survey").click(function(e) {
 
   });
   });
-
-  //Sends new friend to "database"
-  // $.post("/api/friends", newFriend, function (data) {
-  //     console.log("New friend sent to database!")
-
-  // });
 });
 
 //Gets 

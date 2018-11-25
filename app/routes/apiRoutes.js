@@ -1,7 +1,6 @@
 /** Loads Data
  * This will link are data from the friends.js file
  */
-var friendFinder = require("../public/js/friendFinder.js");
 var possibleFriends = require("../data/friends.js");
 // Routing
 
@@ -23,7 +22,6 @@ module.exports = function(app) {
       app.post("/api/friends", function(req, res) {
           possibleFriends.push(req.body);
           console.log("Postman received by api, data output => " + JSON.stringify(req.body, null, 2));
-          friendFinder();
           res.json(possibleFriends);
       })
 }
